@@ -1,8 +1,9 @@
 -- Database Queries
 
 -- Find all customers with postal code 1010
-
+select * from Customers where PostalCode = '1010'
 -- Find the phone number for the supplier with the id 11
+SELECT Phone from Suppliers where SupplierID = 11
 
 -- List first 10 orders placed, sorted descending by the order date
 
@@ -15,3 +16,4 @@
 -- (Stretch) Find a query to discover how many different cities are stored in the Customers table. Repeats should not be double counted
 
 -- (Stretch) Find all suppliers who have names longer than 20 characters. You can use `length(SupplierName)` to get the length of the name
+ 
